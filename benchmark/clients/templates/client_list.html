@@ -1,0 +1,8 @@
+<h1>Clients</h1>
+
+<ul>
+  {% for client in object_list %}
+    <li class="client">{{ client.first_name }} {{ client.last_name }} - {{ client.email }}</li>
+  {% endfor %}
+  <p>Response time: {{ response_time.total_seconds }}</p>
+</ul>
